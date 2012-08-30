@@ -16,7 +16,9 @@ endfu
 
 fu! projectManager#QuitProject()
     if g:session_restore
-        :mksession!
+        :mksession! project_session
+        :arg project_session
+        :argdo g/SuperTab/d | update
     endif
     :qall
 endfu

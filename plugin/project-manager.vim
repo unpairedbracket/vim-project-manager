@@ -4,8 +4,8 @@ endif
 
 call projectManager#SetMissing()
 
-if g:session_restore && filereadable("./Session.vim")
-    source ./Session.vim
+if g:session_restore && filereadable("./project_session") && !&diff
+    source ./project_session
 endif    
 
 command ProjectQuit :call projectManager#QuitProject()
