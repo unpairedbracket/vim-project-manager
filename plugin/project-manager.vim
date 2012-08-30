@@ -10,3 +10,4 @@ endif
 
 command ProjectQuit :call projectManager#QuitProject()
 command ProjectRun :call projectManager#RunProject()
+command ProjectTags :call projectManager#GenerateTags()

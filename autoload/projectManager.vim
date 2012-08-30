@@ -21,4 +21,6 @@ fu! projectManager#QuitProject()
     :qall
 endfu
 
-
+fu! projectManager#GenerateTags()
+    :exec g:tags_execute
+endfu
