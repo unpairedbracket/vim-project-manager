@@ -1,12 +1,3 @@
-fu! projectManager#SetMissing()
-    if !exists("g:project_execute")
-        let g:project_execute = ":echo 'No executable path set'"
-    endif
-    if !exists("g:session_restore")
-        let g:session_restore = 0
-    endif
-endfu
-
 fu! projectManager#RunProject()
     if confirm('Save all files before running?', "&Yes\n&No", 1) == 1
         :wall
